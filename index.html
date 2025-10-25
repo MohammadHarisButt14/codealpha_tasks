@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful To-Do List</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ To-Do List</h1>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Add a new task..." onkeypress="if(event.key === 'Enter') addTask()">
+            <button class="add-btn" onclick="addTask()">Add Task</button>
+        </div>
+        <ul class="task-list" id="taskList"></ul>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
